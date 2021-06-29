@@ -1,0 +1,146 @@
+/*micro reset*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,q,html,body{
+    padding: 0;
+    margin: 0;
+}
+
+ul li ul li:last-child{
+    padding: 0;
+}
+
+ul li ul {
+    padding: 0 0 0 1rem;
+}
+
+li {
+    padding: 0.25rem 0;
+}
+/*fin micro reset*/
+
+.l-header {
+    width: 90%;
+    height: 30vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-header-caps{
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.l-header-caps-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.l-header-caps img {
+    padding: 1rem 1rem 1rem 0;
+}
+
+.l-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-main-me-info, .c-main-hobbies-info, .c-main-countOnMe-info, .c-main-funny-info {
+    max-width: 960px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.c-main-hobbies-info-list{
+    padding: 0 1rem 0 1rem;
+}
+
+.l-main > div:nth-child(odd){
+    background-color: #ebd4ff;
+    padding-bottom: 2rem;
+}
+
+.l-main > div:nth-child(even){
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+table, tr, td{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+.heading-spacer{
+    padding:2rem 0 1rem 0;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    color: white;
+}
+
+footer a, footer a:link, a:visited, a:focus{
+    text-decoration: none;
+    color: white;
+    padding: 0 0.5rem;
+}
+
+.l-main > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-main > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
+    .l-main > *{
+        display: flex;
+        justify-content: left;
+    }
+
+    .c-main-funny-info, .c-main-countOnMe-info, .c-main-hobbies-info, .c-main-me-info{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .c-main-hobbies-info-list li{
+        display: inline;
+        font-weight: 800;
+        padding-right:2rem;
+        font-size: 1.1rem;
+        color:darkgray;
+    }
+
+    .c-main-hobbies-info-list ul{
+        display: inline;
+        padding: 0;
+    }
+
+    .c-main-hobbies-info-list {
+        padding: 0;
+    }
+}
