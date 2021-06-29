@@ -101,19 +101,6 @@ footer a, footer a:link, a:visited, a:focus{
     padding: 0 0.5rem;
 }
 
-.l-main > *{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.l-main > div > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 @media screen and (min-width: 700px) {
     .l-main > *{
         display: flex;
@@ -122,8 +109,8 @@ footer a, footer a:link, a:visited, a:focus{
 
     .c-main-funny-info, .c-main-countOnMe-info, .c-main-hobbies-info, .c-main-me-info{
         display: flex;
-        justify-content: left;
-        flex-direction: column;
+        justify-content: left !important;
+        flex-direction: column !important;
         width: 100%;
     }
 
